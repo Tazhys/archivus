@@ -15,3 +15,6 @@ This is a Discord bot that allows users to archive a specified number of message
 
 - **amount**: The number of messages to archive (e.g., `100`).
 - **channel**: The mention or ID of the channel to archive from (e.g., `#general` or a channel ID).
+
+## Credits
+- ItzMatt019 for contributing to this idea
