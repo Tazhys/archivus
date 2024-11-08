@@ -56,7 +56,7 @@ client.on('messageCreate', async (message) => {
         const fileName = `archive_${channel.id}_${Date.now()}.txt`;
         const filePath = path.join(archiveFolder, fileName);
 
-        fs.writeFileSync(filePath, archive);
+        await fs.promises.writeFile(filePath, archive);
 
         await message.reply({
             content: `✅ Archive successfully created with ${messages.size} messages! You can download the file below:`,
